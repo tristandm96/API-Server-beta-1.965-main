@@ -1,0 +1,134 @@
+h1{
+font-size: 15;
+
+}
+i{
+   font-size: 30px;
+}
+.title{
+    font-size: 25px;
+    padding: 10px;
+}
+
+.image-container {
+    position: relative; 
+    height: 38vh; /* Fixed height for the image container */
+    overflow: hidden; /* Ensure any overflow is hidden */
+    background-color: #fafafa; /* Fallback color */
+}
+
+.image {
+    width: 100%; 
+    height: 100%; 
+    background-size: contain; 
+    background-position: left; 
+    background-repeat: no-repeat; 
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: auto;
+    background-color: rgba(133, 130, 130, 0.599);
+    height: 100vh;
+    border: 20px solid rgba(13, 1, 1, 0);
+    border-radius: 20;
+}
+
+#headContainer {
+    display: flex;
+    justify-content: space-between; 
+    background-color: #fafafa;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    border:  solid 5px;
+}
+.postCategory {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    flex-grow: 1;  /* This ensures the category takes up all available space */
+}
+
+.scrollContainer {
+    margin-top: 0px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border-top: 1px solid lightgray;
+    height: inherit;
+}
+
+.post {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 500px; 
+}
+
+.link {
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.link:hover {
+    font-weight: bold;
+}
+
+divx {
+    border: 1px solid red;
+}
+
+form {
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+}
+
+.sample {
+    margin: 18px;
+    border: 4px dotted #3f75e8; 
+    border-radius: 100px;
+    padding: 10px; 
+    background-color: #f9f9f9; 
+    border-radius: 5px;
+
+}
+.date{
+
+
+color: hsl(0, 5%, 56%);
+
+}
+.postCategory {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    flex-grow: 1;  /* This ensures the category takes up all available space */
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end; /* Aligns the actions to the far right */
+    align-items: center;
+}
+
+.edit, .delete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px; /* Add spacing between the icons */
+}
