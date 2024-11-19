@@ -292,8 +292,13 @@ async function renderDeletePostForm(id) {
         $("#form").show();
         $('#deletePost').on("click", async function () {
             let result = await API_DeletePost(id);
-            if (result)
-                renderContacts();
+            if (result){  emptyform();
+                pageManager.update();
+                pageManager.pageUi();
+                showPost();
+                pageManager.inform();  
+
+            }  
             else
             emptyform();
             pageManager.inform();
