@@ -114,14 +114,12 @@ function renderCreatePostForm() {
     renderPostForm();
 }
 function eraseContent() {
-    $("#postPanel").empty();
-    $("#createPost").remove();
-}
+    $("#postPanel").empty();}
 function hidePost() {
     previousScrollPosition = $("#scrollPanel").scrollTop();
     console.log("Stored scroll position:", previousScrollPosition);
     $("#postPanel").hide();
-    $("#createPost").remove();
+    $("#createPost").hide();
     $('#filter').hide();
 }
 function showPost() {
@@ -194,6 +192,7 @@ async function renderPostForm(post = null) {
         if (result) {
             emptyform();
             pageManager.update();
+            pageManager.pageUi();
             showPost();
             pageManager.inform();
         }
